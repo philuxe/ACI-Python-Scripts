@@ -1,0 +1,2 @@
+TENANT;POD;VLAN;NODES;PG_NAME;APP;EPG;MODE
+Tenant1;1;100;101-102;PolicyGroup-AD-Physique;Admin-HA-Storage;Admin-InBand;regular

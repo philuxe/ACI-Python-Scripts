@@ -1,0 +1,21 @@
+-   ACI Cobra SDK must be installed (check https://cobra.readthedocs.io/en/latest/)
+-   Python 2.7 is required
+-   Test it before running on production networks !!!
+-   give ur feedback
+
+- Set_Config Directory : scripts that will push config to APIC
+    -> Add static paths for pc/pc/vpc from CSV with two different scripts (one of them allows some ports to be "untouchable")
+    -> Del static paths on reg/pc/vpc ports (interactive)
+
+- Get_Config Directory : scripts that will get running config from APIC
+    -> CFG inventory : for a given port, retrieve switch profile, interface profile, port block, policy group and static paths
+    -> Multi POD inventory with port usage :
+
+Number of POD(s) : 1
+POD 1 :
++-----------+-------------+-----------+-----------+---------+------------+-------------+--------------+---------+-----------+
+| Leaf Name |    Model    |   Serial  | Downlinks | Uplinks | Configured | Blacklisted | % Occupation | Link Up | Link Down |
++-----------+-------------+-----------+-----------+---------+------------+-------------+--------------+---------+-----------+
+|   leaf-2  | N9K-C9396PX | TEP-1-102 |     48    |    12   |     10     |      0      |      20      |    3    |     45    |
+|   leaf-1  | N9K-C9396PX | TEP-1-101 |     48    |    12   |     14     |      0      |      29      |    5    |     43    |
++-----------+-------------+-----------+-----------+---------+------------+-------------+--------------+---------+-----------+

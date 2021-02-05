@@ -1,0 +1,4 @@
+TENANT;VLAN;NODE;TARGET;APP;EPG;MODE
+Heroes;222;101;eth1/30;Save_The_Planet;app;untagged
+Heroes;202;VPC;Heroes_FI-2A;Save_The_Planet;db;regular
+Heroes;224;101;eth1/31;Save_The_Planet;web;regular
